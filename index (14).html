@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة التجسير الأكاديمي - Academic Bridging Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <span class="lang-text">EN</span>
+            <svg class="lang-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9l-5.55 5.01L18 22l-6-3.27L6 22l1.55-7.99L2 9l6.91-.74L12 2z"/>
+            </svg>
+        </button>
+    </div>
+ r
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </div>
+                <span class="brand-text" data-ar="منصة التجسير الأكاديمي" data-en="Academic Bridge">منصة التجسير الأكاديمي</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+                <a href="#about" class="nav-link" data-ar="عن المنصة" data-en="About">عن المنصة</a>
+                <a href="#calculator" class="nav-link" data-ar="حاسبة المعادلة" data-en="Calculator">حاسبة المعادلة</a>
+                <a href="#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a>
+                <a href="login.html" class="nav-link auth-link" data-ar="تسجيل الدخول" data-en="Login">تسجيل الدخول</a>
+                <a href="register.html" class="nav-link auth-link" data-ar="إنشاء حساب" data-en="Register">إنشاء حساب</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title" data-ar="نظام ذكي لمعادلة الساعات الأكاديمية" data-en="Smart Academic Credit Equivalency System">
+                        نظام ذكي لمعادلة الساعات الأكاديمية
+                    </h1>
+                    <p class="hero-subtitle" data-ar="احصل على تقييم دقيق وفوري لساعاتك المعتمدة وخطة دراسية شخصية مع تقدير شامل للتكاليف" data-en="Get accurate and instant assessment of your credit hours with personalized study plan and comprehensive cost estimation">
+                        احصل على تقييم دقيق وفوري لساعاتك المعتمدة وخطة دراسية شخصية مع تقدير شامل للتكاليف
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20,6 9,17 4,12"/>
+                            </svg>
+                            <span data-ar="معادلة تلقائية" data-en="Auto Equivalency">معادلة تلقائية</span>
+                        </div>
+                        <div class="feature-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h4l-6 6h4l6-6v-3a2 2 0 0 0-2-2z"/>
+                            </svg>
+                            <span data-ar="خطة شخصية" data-en="Personal Plan">خطة شخصية</span>
+                        </div>
+                        <div class="feature-tag">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M2 12h20"/>
+                            </svg>
+                            <span data-ar="تقدير التكلفة" data-en="Cost Estimation">تقدير التكلفة</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary" onclick="scrollToSection('calculator')" data-ar="ابدأ الحساب الآن" data-en="Start Calculation Now">
+                            ابدأ الحساب الآن
+                        </button>
+                        <button class="btn btn-secondary" onclick="scrollToSection('about')" data-ar="اعرف المزيد" data-en="Learn More">
+                            اعرف المزيد
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="progress-item">
+                                <span data-ar="المواد المكتملة" data-en="Completed Courses">المواد المكتملة</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="progress-item">
+                                <span data-ar="الساعات المعتمدة" data-en="Credit Hours">الساعات المعتمدة</span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                            </div>
+                            <div class="stats-grid">
+                                <div class="stat">
+                                    <span class="stat-number">95</span>
+                                    <span class="stat-label" data-ar="ساعة مقبولة" data-en="Accepted Hours">ساعة مقبولة</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">25</span>
+                                    <span class="stat-label" data-ar="ساعة متبقية" data-en="Remaining Hours">ساعة متبقية</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="عن منصة التجسير الأكاديمي" data-en="About Academic Bridge Platform">
+                    عن منصة التجسير الأكاديمي
+                </h2>
+                <p class="section-subtitle" data-ar="نظام متطور لأتمتة عملية تقييم الساعات المعتمدة وتخطيط المسار الأكاديمي" data-en="Advanced system for automating credit hour assessment and academic pathway planning">
+                    نظام متطور لأتمتة عملية تقييم الساعات المعتمدة وتخطيط المسار الأكاديمي
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 data-ar="دقة عالية" data-en="High Accuracy">دقة عالية</h3>
+                        <p data-ar="خوارزميات متقدمة لضمان دقة المعادلة وشفافية النتائج" data-en="Advanced algorithms ensuring equivalency accuracy and result transparency">
+                            خوارزميات متقدمة لضمان دقة المعادلة وشفافية النتائج
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 data-ar="سرعة فائقة" data-en="Lightning Fast">سرعة فائقة</h3>
+                        <p data-ar="نتائج فورية خلال ثوانٍ قليلة بدلاً من أيام أو أسابيع" data-en="Instant results in seconds instead of days or weeks">
+                            نتائج فورية خلال ثوانٍ قليلة بدلاً من أيام أو أسابيع
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 data-ar="خطة شخصية" data-en="Personalized Plan">خطة شخصية</h3>
+                        <p data-ar="خطة دراسية مخصصة حسب ظروفك وإمكانياتك الأكاديمية" data-en="Customized study plan based on your circumstances and academic capabilities">
+                            خطة دراسية مخصصة حسب ظروفك وإمكانياتك الأكاديمية
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="حاسبة معادلة الساعات" data-en="Credit Equivalency Calculator">
+                    حاسبة معادلة الساعات
+                </h2>
+                <p class="section-subtitle" data-ar="أدخل بيانات موادك السابقة واحصل على تقرير شامل فوري" data-en="Enter your previous course data and get a comprehensive instant report">
+                    أدخل بيانات موادك السابقة واحصل على تقرير شامل فوري
+                </p>
+            </div>
+
+            <div class="calculator-container">
+                <div class="calculator-input">
+                    <div class="input-card">
+                        <h3 data-ar="إضافة مادة جديدة" data-en="Add New Course">إضافة مادة جديدة</h3>
+                        <div class="input-form">
+                            <div class="form-group">
+                                <label data-ar="اسم المادة" data-en="Course Name">اسم المادة</label>
+                                <div style="position: relative;">
+                                    <input type="text" id="courseName" placeholder="مثال: الرياضيات العامة" data-placeholder-ar="مثال: الرياضيات العامة" data-placeholder-en="Example: General Mathematics" autocomplete="off">
+                                    <div id="courseAutocomplete" class="autocomplete-dropdown" style="display: none;"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label data-ar="عدد الساعات" data-en="Credit Hours">عدد الساعات</label>
+                                    <input type="number" id="courseCredits" min="0" max="6" placeholder="3">
+                                </div>
+                                <div class="form-group">
+                                    <label data-ar="الدرجة/العلامة" data-en="Grade/Mark">الدرجة/العلامة</label>
+                                    <input type="text" id="courseGrade" placeholder="85 أو A" data-placeholder-ar="85 أو A" data-placeholder-en="85 or A">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" id="addCourse" data-ar="إضافة المادة" data-en="Add Course">
+                                إضافة المادة
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="courses-list">
+                        <div class="list-header">
+                            <h4 data-ar="المواد المضافة" data-en="Added Courses">المواد المضافة</h4>
+                            <span class="course-count" id="courseCount">0</span>
+                        </div>
+                        <div class="courses-container" id="coursesList">
+                            <div class="empty-state">
+                                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14,2 14,8 20,8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10,9 9,9 8,9"/>
+                                </svg>
+                                <p data-ar="لم يتم إضافة أي مواد بعد" data-en="No courses added yet">لم يتم إضافة أي مواد بعد</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="calculateBtn" data-ar="احسب النتائج" data-en="Calculate Results">احسب النتائج</button>
+                        <button class="btn btn-secondary" id="saveSession" data-ar="حفظ الجلسة" data-en="Save Session">حفظ الجلسة</button>
+                        <button class="btn btn-outline" id="loadSession" data-ar="تحميل الجلسة" data-en="Load Session">تحميل الجلسة</button>
+                        <button class="btn btn-danger" id="resetAll" data-ar="مسح الكل" data-en="Reset All">مسح الكل</button>
+                    </div>
+                </div>
+
+                <div class="calculator-results">
+                    <div class="results-card">
+                        <h3 data-ar="نتائج التحليل" data-en="Analysis Results">نتائج التحليل</h3>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <div class="result-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                    </svg>
+                                </div>
+                                <div class="result-content">
+                                    <span class="result-label" data-ar="إجمالي الساعات السابقة" data-en="Total Previous Hours">إجمالي الساعات السابقة</span>
+                                    <span class="result-value" id="totalPrevious">0</span>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12"/>
+                                    </svg>
+                                </div>
+                                <div class="result-content">
+                                    <span class="result-label" data-ar="الساعات المقبولة" data-en="Accepted Hours">الساعات المقبولة</span>
+                                    <span class="result-value accepted" id="acceptedHours">0</span>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12,6 12,12 16,14"/>
+                                    </svg>
+                                </div>
+                                <div class="result-content">
+                                    <span class="result-label" data-ar="الساعات المتبقية" data-en="Remaining Hours">الساعات المتبقية</span>
+                                    <span class="result-value remaining" id="remainingHours">120</span>
+                                </div>
+                            </div>
+                            <div class="result-item">
+                                <div class="result-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2v20M2 12h20"/>
+                                    </svg>
+                                </div>
+                                <div class="result-content">
+                                    <span class="result-label" data-ar="التكلفة المتوقعة" data-en="Expected Cost">التكلفة المتوقعة</span>
+                                    <span class="result-value cost" id="estimatedCost">0 ريال</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="study-plan">
+                            <h4 data-ar="الخطة الدراسية المقترحة" data-en="Suggested Study Plan">الخطة الدراسية المقترحة</h4>
+                            <div class="plan-container" id="studyPlan">
+                                <p data-ar="قم بإضافة المواد أولاً ثم اضغط 'احسب النتائج'" data-en="Add courses first then click 'Calculate Results'">
+                                    قم بإضافة المواد أولاً ثم اضغط 'احسب النتائج'
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="export-actions">
+                            <button class="btn btn-outline" id="exportReport" data-ar="تصدير التقرير" data-en="Export Report">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7,10 12,15 17,10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                <span data-ar="تصدير JSON" data-en="Export JSON">تصدير JSON</span>
+                            </button>
+                            <button class="btn btn-outline" id="copyReport" data-ar="نسخ التقرير" data-en="Copy Report">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                                </svg>
+                                <span data-ar="نسخ" data-en="Copy">نسخ</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                    <p data-ar="هل تحتاج مساعدة أو لديك استفسار؟ فريقنا جاهز لمساعدتك" data-en="Need help or have a question? Our team is ready to assist you">
+                        هل تحتاج مساعدة أو لديك استفسار؟ فريقنا جاهز لمساعدتك
+                    </p>
+
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                            </svg>
+                            <span data-ar="دعم فني متاح 24/7" data-en="24/7 Technical Support">دعم فني متاح 24/7</span>
+                        </div>
+                        <div class="contact-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 11H5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h4l-6 6h4l6-6v-3a2 2 0 0 0-2-2z"/>
+                            </svg>
+                            <span data-ar="استشارات أكاديمية مجانية" data-en="Free Academic Consultations">استشارات أكاديمية مجانية</span>
+                        </div>
+                        <div class="contact-feature">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <polyline points="2,17 12,12 22,17"/>
+                            </svg>
+                            <span data-ar="ردود سريعة عبر البريد" data-en="Quick Email Responses">ردود سريعة عبر البريد</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                    </div>
+                    <span data-ar="منصة التجسير الأكاديمي" data-en="Academic Bridge Platform">منصة التجسير الأكاديمي</span>
+                </div>
+                <p data-ar="نحو مستقبل أكاديمي أفضل بتقنيات ذكية ومبتكرة" data-en="Towards a better academic future with smart and innovative technologies">
+                    نحو مستقبل أكاديمي أفضل بتقنيات ذكية ومبتكرة
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+    
+    <script src="Firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
